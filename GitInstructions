@@ -1,0 +1,26 @@
+Links
+-----
+Site:  http://www.git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository
+
+
+Commands
+--------
+git init                             //Create new repository
+git add SourceControlTest.mzx        //Add file to Git
+git rm CrapFile.txt                  //Remove from Git and filesystem
+git status                           //Get current status of your commits
+git commit -m "Altered crazy guy"    //Commit changes!
+
+cat .gitignore                       //Put backup*.mzx in there
+
+git log                              //View history of commits
+git checkout -- Blah.txt             //Undo changes to file; like an undo
+
+git remote                           //List remote repositories
+git remote add TestRepo http://blah  //Add repository
+git remote show TestRepo             //Look at what is going on
+git fetch TestRepo                   //Gets latest data, does not merge!
+
+git pull                             //Download: get and merge changes
+git push TestRepo master             //Upload: push the local master branch
+
