@@ -1,5 +1,5 @@
 end
 
 : "touch"
-* "Who do you think you are, Mister 1.0?"
+* "Who do you think you are, Mister 2.0?"
 go SEEK for 1
