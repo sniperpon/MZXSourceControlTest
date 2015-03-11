@@ -1,10 +1,29 @@
-Links
------
-Site:  http://www.git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository
+------------
+| Workflow |
+------------
+-git pull
+-[Modify Files]
+-git add [A Modified File]
+-git commit -m "What You Changed"
+-git push
 
 
-Commands
---------
+
+---------
+| Links |
+---------
+Site:    http://www.git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository
+GitHub:  http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1
+Repo:    https://github.com/sniperpon/MZXSourceControlTest.git
+
+
+
+-----------------
+| Git Use Cases |
+-----------------
+
+
+//A whole slew of miscellaneous commands
 git init                             //Create new repository
 git add SourceControlTest.mzx        //Add file to Git
 git rm CrapFile.txt                  //Remove from Git and filesystem
@@ -24,3 +43,23 @@ git fetch TestRepo                   //Gets latest data, does not merge!
 git pull                             //Download: get and merge changes
 git push TestRepo master             //Upload: push the local master branch
 
+
+//Create a new local and remote repository all at once
+echo "# MZXSourceControlTest" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/sniperpon/MZXSourceControlTest.git
+git push -u origin master
+
+
+//Connect an existing local repository to a remote one
+git remote add origin https://github.com/sniperpon/MZXSourceControlTest.git
+git push -u origin master
+
+
+//Get started with a remote repository: http://www.gitguys.com/topics/git-and-remote-repositories/
+-git clone URL
+-Make changes, git add, then git commit to local repo
+-git push to publish changes to remote repo
+-git pull to get latest from remote
