@@ -36,10 +36,23 @@
 	(case-fold-search case-insensitive)                     ; This doesn't work, alas?
 ))
 
+;; syntax table to handle comments
+(defvar mzxedit-syntax-table nil "Syntax table for `mzxedit-mode'.")
+(setq mzxedit-syntax-table
+      (let ((synTable (make-syntax-table)))
+
+        ;; mzx comments start with a period, like:  . "This is a comment"
+	;; Taken from here: http://ergoemacs.org/emacs/elisp_comment_handling.html
+        (modify-syntax-entry ?. "< b" synTable)
+        (modify-syntax-entry ?\n "> b" synTable)
+
+        synTable))
+
 ;; Set up our mode
 (define-derived-mode mzxedit-mode fundamental-mode
   "mzxedit mode"
   "Major mode for editing Megazeux Robotic code"
+  :syntax-table mzxedit-syntax-table
 
   ;; Set up the syntax highlighting
   (setq font-lock-defaults '(mzx-font-lock-keywords))
