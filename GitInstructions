@@ -3,10 +3,10 @@
 ------------
 -git pull
 -[Modify Files]
+-git checkout -- FileToUndo.txt
 -git add [A Modified File]
 -git commit -m "What You Changed"
 -git push
-
 
 
 ---------
@@ -15,6 +15,9 @@
 Site:    http://www.git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository
 GitHub:  http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1
 Repo:    https://github.com/sniperpon/MZXSourceControlTest.git
+Emacs:   https://www.gnu.org/software/emacs/tour/
+Syntax:  http://ergoemacs.org/emacs/elisp_syntax_coloring.html
+	 http://www.emacswiki.org/emacs/ModeTutorial
 
 
 
