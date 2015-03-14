@@ -3,5 +3,5 @@ end
 . "Sample comment"
 
 : "touch"
-* "Who do you think you are, Mister 2.0?"
+* "Who do you think you are, Mister 3.0?"
 go SEEK for 1
